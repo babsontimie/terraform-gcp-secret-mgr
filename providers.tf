@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "tfstate-gcp-secrmgr-6e842a42" # Replace with your output bucket name
+    bucket = "tfstate-gcp-secrmgr-11046a4b" # Replace with your output bucket name
     prefix = "terraform/state"
   }
 

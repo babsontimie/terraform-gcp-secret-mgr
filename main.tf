@@ -20,11 +20,11 @@ data "google_secret_manager_secret_version" "api_key" {
 }
 
 # Example resource: Cloud SQL user
-resource "google_sql_user" "app_user" {
-  name     = "appuser"
-  instance = "my-sql-instance"
-  password = data.google_secret_manager_secret_version.db_password.secret_data
-}
+# resource "google_sql_user" "app_user" {
+#   name     = "appuser"
+#   instance = "my-sql-instance"
+#   password = data.google_secret_manager_secret_version.db_password.secret_data
+# }
 
 # Example: metadata injection with API key
 resource "google_compute_instance" "example" {
@@ -43,6 +43,6 @@ resource "google_compute_instance" "example" {
   }
 
   metadata = {
-    api_key = data.google_secret_manager_secret_version.api_key.secret_data
+    api_key = data.google_secret_manager_secret_version.api_key.secret
   }
 }
