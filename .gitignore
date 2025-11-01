@@ -1,0 +1,4 @@
+# Ignore service account keys
+*.json
+!terraform.tfvars.json
+
