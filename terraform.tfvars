@@ -1,0 +1,5 @@
+project_id = "tee-ghactions"
+#secret_name = "terraformsa-ghactions-7b88dcb30131.json"
+# secret_name = "terraformsa-ghactions-7b88dcb30131"
+region = "us-central1"
+# bucket_location = "us-central1"
